@@ -55,9 +55,11 @@ spec:
       labels:
         app: reviewfilmes
     spec:
+      imagePullSecrets:
+        - name: ecr-secret
       containers:
         - name: reviewfilmes
-          image: josearaujojr/review-filmes:v3
+          image: 903818434409.dkr.ecr.us-east-1.amazonaws.com/review-filmes:v1
           env:
           - name: ASPNETCORE_HTTP_PORTS
             value: "8080"
@@ -65,6 +67,7 @@ spec:
             value: "Host=postgre;Database=reviewfilmes;Username=reviewfilmes;Password=Pass0rd2024"
           ports:
             - containerPort: 8080
+
 ---
 ## DEPLOY SERVICE WEB APP
 
