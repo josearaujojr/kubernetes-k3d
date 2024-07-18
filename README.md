@@ -1,4 +1,4 @@
-# DevOps4Devs 02
+# DevOps
 
 ## Aula 01
 ### O projeto conversão de temperatura se encontra no link abaixo:
