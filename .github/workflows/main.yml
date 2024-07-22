@@ -1,0 +1,19 @@
+name: CI-CD
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PASSO 01
+        run: echo "Construir a imagem do app"
+      - name: PASSO 02
+        run: echo "Publicar a imagem do app no Docker hub"
+  CD:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PASSO 01
+        run: echo "Deploy do app"
