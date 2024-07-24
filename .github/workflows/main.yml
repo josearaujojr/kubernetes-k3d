@@ -56,4 +56,4 @@ jobs:
           manifests: |
             ./k8s/deployment.yaml
           images: |
-            ${{ steps.login-ecr.outputs.registry }}/eksdevelopment-reviewfilmes:v${{ github.run_number }}
+            ${{ steps.login-ecr.outputs.registry }}/eksdevelopment-reviewfilmes:${{ github.run_number }}
